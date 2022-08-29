@@ -8,3 +8,11 @@
     border: 2px solid red;
     flex: 1;
 }
+
+.container {
+    display: flex;
+}
+
+button {
+    margin-bottom: 10px;
+}

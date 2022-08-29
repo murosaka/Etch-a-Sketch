@@ -15,3 +15,11 @@ for (let i = 0; i < 16; i++) {
         row.appendChild(cell).className = 'cell';
     }
 }
+
+let elements = document.querySelectorAll(".cell");
+elements.forEach(element => {
+    element.addEventListener("mouseover", 
+    () => element.setAttribute('style','background-color: black')); 
+    element.addEventListener("click", 
+    () => element.setAttribute('style','background-color: '));   
+});
