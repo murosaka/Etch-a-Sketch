@@ -11,6 +11,7 @@
 
 .container {
     display: flex;
+    max-width: 96px;
 }
 
 button {
