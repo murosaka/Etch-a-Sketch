@@ -1,17 +1,20 @@
 .row {
     display: flex;
+    max-width: 960px;
+    max-height: 960px;
 }
+    
 
 .cell {
     height: 30px;
     width: 30px;
     border: 2px solid red;
-    flex: 1;
+    flex: 1,0;
 }
 
 .container {
     display: flex;
-    max-width: 96px;
+    
 }
 
 button {

@@ -5,7 +5,17 @@ let num;
 document.getElementById('grid').addEventListener("click", drawGrid);
 
 function drawGrid (num) {
-    num = prompt("Enter number", 16);
+    while (true) {
+        num = prompt("Enter number", 16);
+        if (num < 100) {break}
+        else {alert ("number shall be less than 100");}
+    };
+    // num = prompt("Enter number", 16);
+    // if (num > 100) {
+    //     alert ("number shall be less than 100");
+    //     num = prompt("Enter number", 16);
+    // };
+
     let rows = document.querySelectorAll(".row");
     rows.forEach(row => {container.removeChild(row);}); 
     for (let i = 0; i < num; i++) {
@@ -15,7 +25,7 @@ function drawGrid (num) {
             cell = document.createElement('div');
             row.appendChild(cell).className = 'cell';
         }
-    }
+    };
     let elements = document.querySelectorAll(".cell");
     elements.forEach(element => {
         element.addEventListener("mouseover", 
